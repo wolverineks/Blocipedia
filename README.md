@@ -1,7 +1,7 @@
-0/11 Checkpoint Completed
+1/11 Checkpoints Completed
 
-1. [Intro] (https://www.bloc.io/users/adam-langley/checkpoints/1039?roadmap_section=16) ([Basic Rails App] (https://www.bloc.io/users/adam-langley/checkpoints/299?roadmap_section=5))
-  * [ ] Getting Started Guide
+1. ~~[Intro]~~ (https://www.bloc.io/users/adam-langley/checkpoints/1039?roadmap_section=16) ([Basic Rails App] (https://www.bloc.io/users/adam-langley/checkpoints/299?roadmap_section=5))
+  * [x] Getting Started Guide
 
 2. [User Sign-up] (https://www.bloc.io/users/adam-langley/checkpoints/1040?roadmap_section=16) ([User Authentication] (https://www.bloc.io/users/adam-langley/checkpoints/308?roadmap_section=5))
   * [ ] Incorporate Devise Gem
