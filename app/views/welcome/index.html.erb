@@ -1,2 +1,24 @@
-<h1>Welcome to Blocipedia</h1>
-<p>This is the home page for Blocipedia.</p>
+<br>
+<div class="jumbotron">
+  <h1>Blocipedia</h1>
+  <p>Blocipedia is a Wikipedia Clone. Start wikis. Edit wikis. Read wikis.</p>
+  <p>
+      <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>Create</h2>
+    <p>Blocipedia allows you to store large amounts of knowledge.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Contribute</h2>
+    <p>Blocipedia allows you to add your 2 cents.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Learn</h2>
+    <p>Blocipedia allows you to learn new things quickly.</p>
+  </div>
+</div>

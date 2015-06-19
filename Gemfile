@@ -40,6 +40,11 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 
+# Use Figaro Gem for Environmental Variables
+gem 'figaro', '1.0'
+# Adds devise authentication
+gem 'devise'
+# Adds bootstrap
 gem 'bootstrap-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

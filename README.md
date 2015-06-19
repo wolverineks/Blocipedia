@@ -3,17 +3,17 @@
 1. ~~[Intro]~~ (https://www.bloc.io/users/adam-langley/checkpoints/1039?roadmap_section=16) ([Basic Rails App] (https://www.bloc.io/users/adam-langley/checkpoints/299?roadmap_section=5))
   * [x] Getting Started Guide
 
-2. [User Sign-up] (https://www.bloc.io/users/adam-langley/checkpoints/1040?roadmap_section=16) ([User Authentication] (https://www.bloc.io/users/adam-langley/checkpoints/308?roadmap_section=5))
-  * [ ] Incorporate Devise Gem
-  * [ ] Test
+2. ~~[User Sign-up]~~ (https://www.bloc.io/users/adam-langley/checkpoints/1040?roadmap_section=16) ([User Authentication] (https://www.bloc.io/users/adam-langley/checkpoints/308?roadmap_section=5))
+  * [x] Incorporate Devise Gem
+  * [x] Test
     * Sign a new user up. Do you receive a confirmation email?
     * What happens if you attempt to sign up with an invalid email?
     * What happens if you attempt to sign up with a duplicate email?
   * [ ] Bonus: Try [Authentication from scratch] (http://railscasts.com/episodes/250-authentication-from-scratch)
 
-3. [User Sign-in/Sign-out] (https://www.bloc.io/users/adam-langley/checkpoints/1041?roadmap_section=16) ([Authentication Continued] (https://www.bloc.io/users/adam-langley/checkpoints/670))
-  * [ ] Incorporate User sign-in/Sign-out
-  * [ ] Test
+3. ~~[User Sign-in/Sign-out]~~ (https://www.bloc.io/users/adam-langley/checkpoints/1041?roadmap_section=16) ([Authentication Continued] (https://www.bloc.io/users/adam-langley/checkpoints/670))
+  * [x] Incorporate User sign-in/Sign-out
+  * [x] Test
     * Sign into Blocipedia, does the top navigation change to indicate you are signed in?
     * Sign out of Blocipedia, does the top navigation change to indicate you are signed out?
     * What happens if you attempt to reset your password?
