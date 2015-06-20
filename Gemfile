@@ -43,6 +43,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 
+# Use Stripe Gem for payment processing
+gem 'stripe'
 # Use Pundit Gem for authorization
 gem 'pundit'
 # Use Figaro Gem for Environmental Variables
