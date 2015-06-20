@@ -18,19 +18,19 @@
     * Sign out of Blocipedia, does the top navigation change to indicate you are signed out?
     * What happens if you attempt to reset your password?
 
-4. [Wiki CRUD] (https://www.bloc.io/users/adam-langley/checkpoints/1042?roadmap_section=16) ([Models] (https://www.bloc.io/users/adam-langley/checkpoints/303)) ([CRUD] (https://www.bloc.io/users/adam-langley/checkpoints/306)) ([More CRUD] (https://www.bloc.io/users/adam-langley/checkpoints/307))
-  * [ ] Create Wiki model
-  * [ ] Test
+4. ~~[Wiki CRUD]~~ (https://www.bloc.io/users/adam-langley/checkpoints/1042?roadmap_section=16) ([Models] (https://www.bloc.io/users/adam-langley/checkpoints/303)) ([CRUD] (https://www.bloc.io/users/adam-langley/checkpoints/306)) ([More CRUD] (https://www.bloc.io/users/adam-langley/checkpoints/307))
+  * [x] Create Wiki model
+  * [x] Test
     * Are you able to create new public wikis?
     * Are you able to update public wikis?
     * Are you able to delete public wikis?
 
-5. [User Roles] (https://www.bloc.io/users/adam-langley/checkpoints/1043?roadmap_section=16) ([Authorization] (https://www.bloc.io/users/adam-langley/checkpoints/310))
-  * [ ] Incorporate Pundit Gem
-  * [ ] Set Roles: Standard, Premium, Admin
-  * [ ] Default to Standard Role
+5. ~~[User Roles]~~ (https://www.bloc.io/users/adam-langley/checkpoints/1043?roadmap_section=16) ([Authorization] (https://www.bloc.io/users/adam-langley/checkpoints/310))
+  * [x] Incorporate Pundit Gem
+  * [x] Set Roles: Standard, Premium, Admin
+  * [x] Default to Standard Role
   * [ ] Bonus: Implement [Authorization from Scratch] (http://janeeats.github.io/blog/2013/03/23/authorization-basics-in-rails/)
-  * [ ] Test
+  * [x] Test
     * Use the Rails console to create a new user. Are they given the default role?
     * Are you able to edit wikis created by another user?
 
