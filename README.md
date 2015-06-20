@@ -34,10 +34,10 @@
     * Use the Rails console to create a new user. Are they given the default role?
     * Are you able to edit wikis created by another user?
 
-6. [Seeding Data] (https://www.bloc.io/users/adam-langley/checkpoints/1044?roadmap_section=16) ([Seed Data] (https://www.bloc.io/users/adam-langley/checkpoints/305?roadmap_section=5))
-  * [ ] Incorporate Faker Gem
-  * [ ] Create fake data for users and wikis
-  * [ ] Test
+6. ~~[Seeding Data]~~ (https://www.bloc.io/users/adam-langley/checkpoints/1044?roadmap_section=16) ([Seed Data] (https://www.bloc.io/users/adam-langley/checkpoints/305?roadmap_section=5))
+  * [x] Incorporate Faker Gem
+  * [x] Create fake data for users and wikis
+  * [x] Test
     * Rebuild your database, is it seeded with the data you specified?
 
 7. [Upgrading an Account] (https://www.bloc.io/users/adam-langley/checkpoints/1045?roadmap_section=16)

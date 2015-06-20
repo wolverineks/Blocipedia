@@ -24,6 +24,9 @@ group :development, :test do
   gem 'pry-nav'
   gem 'pry-stack_explorer'
 
+  # Use Faker Gem to generate fake data for the database
+  gem 'faker'
+
   # Use Capybara Gem for more testing
   gem 'capybara'
 
