@@ -40,6 +40,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 
+# Use Pundit Gem for authorization
+gem 'pundit'
 # Use Figaro Gem for Environmental Variables
 gem 'figaro', '1.0'
 # Adds devise authentication
