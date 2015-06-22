@@ -4,8 +4,8 @@ class Amount < ActiveRecord::Base
 
   end
 
-  def default
-    "15_00"
+  def self.default
+    15_00
   end
 
 end

@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   after_initialize :init
 
   def init
-    self.role = "member"
+    self.role = "standard"
   end
 
   def admin?
