@@ -40,11 +40,11 @@
   * [x] Test
     * Rebuild your database, is it seeded with the data you specified?
 
-7. [Upgrading an Account] (https://www.bloc.io/users/adam-langley/checkpoints/1045?roadmap_section=16)
-  * [ ] Determine a User Flow
-  * [ ] Incorporate ([Stripe Stripe Integration Resource] (https://www.bloc.io/resources/stripe-integration))
-  * [ ] Allow Upgrade and Downgrade
-  * [ ] Test
+7. ~~[Upgrading an Account]~~ (https://www.bloc.io/users/adam-langley/checkpoints/1045?roadmap_section=16)
+  * [x] Determine a User Flow
+  * [x] Incorporate ([Stripe Stripe Integration Resource] (https://www.bloc.io/resources/stripe-integration))
+  * [x] Allow Upgrade and Downgrade
+  * [x] Test
     * Upgrade an existing user account. Was your Stripe account charged? Was the user role changed?
     * Upgrade a premium user. Was your Stripe account charged? Was their role changed?
 

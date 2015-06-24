@@ -36,51 +36,23 @@
     <% end %>
 
 
-  <% if @user.role == nil  %>
+  <% if @user.role == "standard"  %>
 
-    <h3>Upgrade to Premium Account</h3>
-      <div class="actions">
-        <%#= link_to "Upgrade", new_charge_path, class: 'btn btn-success' %>
+      <h3>Upgrade to Premium Account</h3>
 
-        <%= form_tag charges_path do %>
-          <article>
-            <label class="amount">
-              <span>Amount: $15.00</span>
-            </label>
-          </article>
+      <%= render partial: "charges/new", locals: { stripe_btn_data: @stripe_btn_data } %>
 
-          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-            data-description="Premium Membership"
-            data-amount="15_00">
-          </script>
-        <% end %>
+  <% elsif @user.role == "premium" %>
 
-      </div>
+      <h4>Downgrade to Standard Account</h3>
 
-  <% elseif @user.role == "premium" %>
+      <%= render partial: "charges/cancel" %>
 
-      <h3>Downgrade to Standard Account</h3>
-        <div class="actions">
-        <%= form_tag charges_path do %>
-          <article>
-            <label class="amount">
-              <span>Amount: $15.00</span>
-            </label>
-          </article>
-
-          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-            data-description="Premium Membership"
-            data-amount="15_00">
-          </script>
-        <% end %>
-      </div>
   <% end %>
 
-    <h3>Cancel my account</h3>
+    <h4>Cancel my account</h3>
 
-    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger' %></p>
+    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger' %>
 
   </div>
 </div>

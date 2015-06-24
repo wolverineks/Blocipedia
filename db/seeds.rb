@@ -23,6 +23,23 @@ admin.skip_confirmation!
 admin.save!
 
 # Create standard members
+
+#tmp_file = open(Faker::Avatar.image)
+#FileUtils.mv tmp_file, '/tmp/avatar.png'
+
+  member = User.new(
+    name:     Faker::Name.name,
+    email:    "member@example.com",
+    password: "helloworld",
+    role:     "standard"
+    #avatar:   File.open('/tmp/avatar.png') 
+  )
+
+  member.skip_confirmation!
+  member.save!
+
+
+# Create standard members
 5.times do 
 #tmp_file = open(Faker::Avatar.image)
 #FileUtils.mv tmp_file, '/tmp/avatar.png'
@@ -56,13 +73,25 @@ end
   member.save!
 end
 
-# create wikis
+# create Public Wikis
 5.times do
   Wiki.create!(
     title: Faker::Lorem.sentence,
-    body: Faker::Lorem.paragraph
+    body: Faker::Lorem.paragraph,
+    user: User.all.sample
   )
 end
+
+# create Private Wikis
+5.times do
+  Wiki.create!(
+    title: Faker::Lorem.sentence,
+    body: Faker::Lorem.paragraph,
+    user: User.all.sample,
+    private: true
+  )
+end
+
 
 puts "Seed finished"
 puts "#{Wiki.count} wikis created"

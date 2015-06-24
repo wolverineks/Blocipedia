@@ -5,7 +5,7 @@ class Amount < ActiveRecord::Base
   end
 
   def self.default
-    15_00
+    1500
   end
 
 end

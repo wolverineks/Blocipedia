@@ -6,6 +6,16 @@
   </article>
   
   <script
+     src="https://checkout.stripe.com/checkout.js" 
+     class="stripe-button"
+     data-key=pk_test_hx7HVgdKG2jsDVAcZVTOB2st
+     data-amount=1500
+     data-name="Blocipedia"
+     data-description=Premium Membership
+     data-image="http://www.iloud.jp/img/BlocParty_Four.jpg">
+  </script>
+
+    <script
     src="https://checkout.stripe.com/checkout.js" 
     class="stripe-button"
     data-key=@stripe_btn_data[:key]
@@ -14,6 +24,4 @@
     data-description=@stripe_btn_data[:description]
     data-image="/128x128.png">
   </script>
-
-  
 <% end %>
