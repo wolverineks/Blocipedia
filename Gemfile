@@ -43,6 +43,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 
+# Use Redcarpet Gem for markdown
+gem 'redcarpet'
 # Use will_paginate Gem for pagination
 gem 'will_paginate', '~> 3.0.5'
 # Use Stripe Gem for payment processing
