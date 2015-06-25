@@ -22,14 +22,41 @@ admin = User.new(
 admin.skip_confirmation!
 admin.save!
 
-# Create standard members
+# Create premium members
+
+#tmp_file = open(Faker::Avatar.image)
+#FileUtils.mv tmp_file, '/tmp/avatar.png'
+
+member = User.new(
+  name:     Faker::Name.name,
+  email:    "member1@example.com",
+  password: "helloworld",
+  role:     "premium"
+  #avatar:   File.open('/tmp/avatar.png') 
+)
+
+member.skip_confirmation!
+member.save!
+
+member = User.new(
+  name:     Faker::Name.name,
+  email:    "member2@example.com",
+  password: "helloworld",
+  role:     "premium"
+  #avatar:   File.open('/tmp/avatar.png') 
+)
+
+member.skip_confirmation!
+member.save!
+
+# Create standard member
 
 #tmp_file = open(Faker::Avatar.image)
 #FileUtils.mv tmp_file, '/tmp/avatar.png'
 
   member = User.new(
     name:     Faker::Name.name,
-    email:    "member@example.com",
+    email:    "member3@example.com",
     password: "helloworld",
     role:     "standard"
     #avatar:   File.open('/tmp/avatar.png') 

@@ -6,4 +6,8 @@ class Wiki < ActiveRecord::Base
 
   default_scope { order(title: 'ASC') }
 
+  scope :visible_to, -> (user) { user ? all : publicly_viewable }
+
+  scope :publicly_viewable, -> { where(private: false) }
+
 end

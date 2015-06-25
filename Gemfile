@@ -43,6 +43,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 
+# Use will_paginate Gem for pagination
+gem 'will_paginate', '~> 3.0.5'
 # Use Stripe Gem for payment processing
 gem 'stripe'
 # Use Pundit Gem for authorization
