@@ -8,4 +8,5 @@
   <%= link_to "Delete", @wiki, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to delete this wiki?' } %>
 <% end %>
 
+
 <p><%= markdown_to_html @wiki.body %></p>
